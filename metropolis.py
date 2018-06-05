@@ -54,7 +54,9 @@ def metropolis_hastings(p, iter=1000):
             x, y = x_star, y_star
             samples[k] = np.array([x, y])
             k = k + 1
+            
             if(k > 1):
+                
                 ###### Observed Samples
                 axGraph.clear()
                 x_mu  = np.mean(samples[0:k,0])
